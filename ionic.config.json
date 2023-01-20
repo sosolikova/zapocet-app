@@ -1,0 +1,7 @@
+{
+  "name": "zapocet-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
