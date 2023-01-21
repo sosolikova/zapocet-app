@@ -1,9 +1,88 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>register</ion-title>
+  <ion-toolbar color="success">
+    <ion-title>Registrace</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <ion-card>
+      <ion-card-header>
+        <ion-card-title>Co chcete udělat?</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+
+          <ion-radio-group >
+            <ion-item>
+              <ion-label>KOUPIT koníka</ion-label>
+              <ion-radio  value="CLIENT" slot="start"></ion-radio>
+            </ion-item>
+        
+            <ion-item>
+              <ion-label>PRODAT koníka</ion-label>
+              <ion-radio value="PARTNER" slot="start"></ion-radio>
+            </ion-item>
+        
+          </ion-radio-group>
+
+      </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Kontakt</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+
+        <ion-item>
+          <ion-label position="floating">Name</ion-label>
+          <ion-input  type="text"></ion-input>
+        </ion-item>
+    
+        <ion-item>
+          <ion-label position="floating">Email</ion-label>
+          <ion-input type="Email"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Heslo</ion-label>
+          <ion-input type="password"></ion-input>
+        </ion-item>    
+        <ion-item>
+          <ion-label position="floating">Potvrzení hesla</ion-label>
+          <ion-input type="password"></ion-input>
+        </ion-item> 
+        <ion-item>
+          <ion-label position="floating">Telefon</ion-label>
+          <ion-input type="Telefon"></ion-input>
+        </ion-item> 
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Adresa</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="floating">Město</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>    
+      <ion-item>
+        <ion-label position="floating">PSČ</ion-label>
+        <ion-input type="tel"></ion-input>
+      </ion-item>  
+      <ion-item>
+        <ion-label position="floating">Ulice</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item> 
+      <ion-item>
+        <ion-label position="floating">Číslo popisné</ion-label>
+        <ion-input type="tel"></ion-input>
+      </ion-item>  
+      <ion-item>
+        <ion-label position="floating">Stát</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item> 
+      
+    </ion-card-content>
+  </ion-card>
+  <ion-button size="full" color="light" >Registrovat</ion-button>
 
 </ion-content>
